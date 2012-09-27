@@ -12,6 +12,7 @@ import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.ui.forms.widgets.FormToolkit;
+import org.eclipse.swt.widgets.Label;
 
 
 
@@ -157,6 +158,12 @@ public class FirstProject20121 {
 		btnNewButton_1.setBounds(691, 349, 97, 62);
 		formToolkit.adapt(btnNewButton_1, true, true);
 		btnNewButton_1.setText("Reset");
+		
+		Label lblPlayer = formToolkit.createLabel(shell, "Player 1", SWT.NONE);
+		lblPlayer.setBounds(20, 74, 55, 15);
+		
+		Label lblPlayer_1 = formToolkit.createLabel(shell, "Player 2", SWT.NONE);
+		lblPlayer_1.setBounds(707, 74, 55, 15);
 		
 		//text = formToolkit.createText(shell, "New Text", SWT.NONE);
 		//text.setText("");
